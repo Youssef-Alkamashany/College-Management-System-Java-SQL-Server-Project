@@ -1,54 +1,55 @@
 # 🏫 College Management System (End-to-End Engineering)
-> **A complete Academic ERP solution covering System Analysis, Database Design, and Full-Stack Java Implementation.**
+> **A complete Academic ERP solution covering Requirement Analysis, Database Modeling, and Full-Stack Java Implementation.**
 
 <div align="center">
 
 ![Java](https://img.shields.io/badge/Java-100%25-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-2019-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
 ![UML](https://img.shields.io/badge/Documentation-UML_&_ERD-blue?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Design-MVC_Pattern-green?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Design-Relational_Schema-green?style=for-the-badge)
 
 </div>
 
 ---
 
-### 🌟 Project Overview
-This project showcases a **Full Software Development Lifecycle (SDLC)**. It’s not just code; it’s a documented system that starts from requirement analysis and database modeling to a functional desktop application built with **100% Java** and **SQL Server**.
+### 🌟 Project Vision
+This project is a showcase of the **Full Software Development Lifecycle (SDLC)**. It moves beyond simple coding to demonstrate professional **System Analysis** and **Database Architecture**. The system is engineered to manage complex college environments, handling everything from student lifecycles to faculty assignments and departmental hierarchies.
 
 ---
 
-### 📊 System Analysis & Design (UML)
-The system is documented with high-level architectural diagrams to ensure logical consistency:
-* **Use Case Diagram:** Defines the roles of the **Admin** (managing students, instructors, and courses) and the **Student** (enrollment and profile management).
-* **Detailed Use Case Scenario:** A full breakdown of the "Change Student Information" process, including triggers, preconditions, and main path steps.
-* **Activity Diagram:** A swimlane-based flow showing the interaction between the **Admin**, **Form**, and **System** during core processes like "Add Student".
+### 📊 System Analysis & Behavioral Design (UML)
+The application logic is governed by standardized engineering blueprints to ensure a seamless user experience:
+* **Use Case Diagram:** Maps out the interactions for **Admin**, **Students**, **Instructors**, and **Departments**, defining clear boundaries for administrative control and academic access.
+* **Detailed Use Case Scenarios:** Includes deep-dive documentation for critical events like "Change Student Information," detailing triggers, preconditions, and post-conditions.
+* **Activity Swimlane Diagram:** Visualizes the dynamic flow between the **Admin**, the **System Form**, and the **Core Logic** during complex data entry processes.
 
 ---
 
-### 🗄️ Database Architecture (ERD & Schema)
-The database is designed for high data integrity and normalization:
-* **ERD (Entity Relationship Diagram):** Defines entities like `Students`, `Instructors`, `Departments`, and `Courses` with their respective attributes and relationships.
-* **Relational Schema:** Implementation of structured relationships:
-    * **1:1 Relationship:** Between `Department` and `Instructors` (Management).
-    * **1:N Relationship:** Between `Instructors` and `Courses` (Teaching).
-    * **M:N Relationship:** Between `Students` and `Courses` (Enrollment) via the `Enrollment` junction table.
-* **Multi-valued Attributes:** Handled via dedicated normalization (e.g., handling multiple phone numbers for students and instructors).
+### 🗄️ Advanced Database Engineering (SQL & ERD)
+The backend is a robust **SQL Server** relational model designed with strict adherence to normalization rules:
+* **ERD (Entity Relationship Diagram):** Defines entities like `Students`, `Instructors`, `Departments`, and `Courses` with their complex logical connections.
+* **Relational Schema & Mapping:** * **1:1 Management:** Linking `Department` to a unique `Instructor_ID` to enforce a single head of department.
+    * **1:N Teaching:** Mapping `Instructors` to multiple `Courses`.
+    * **M:N Enrollment:** Managed through a high-integrity `Enrollment` junction table linking Students and Courses.
+* **Data Integrity & Constraints:** Implementation of Primary Keys, Foreign Keys, and CHECK constraints (e.g., Course Duration 1-3) to ensure zero data corruption.
+* **Normalization (Multi-valued Attributes):** Optimized handling of multiple contact numbers for students and instructors via separate lookup tables.
 
 ---
 
-### 🛠️ Technical Implementation
-* **Frontend (Java GUI):** Modular interface for each entity (`Student.java`, `Instructor.java`, `Department.java`, etc.) built with Java AWT.
-* **Backend (Java 100%):** Robust logic handling data flow, event listeners, and user actions.
-* **Connectivity (JDBC):** Secure bridge to SQL Server using the `College.java` connection class.
-* **Database (T-SQL):** Optimized queries for CRUD operations and data persistence using primary and foreign keys.
+### 🛠️ Tech Stack & Implementation
+* **Frontend (Java GUI):** A modular, multi-frame desktop interface developed with **Java AWT** (e.g., `Instructor.java`, `Student.java`, `Department.java`).
+* **Business Logic (100% Java):** The entire system flow, event handling, and internal data processing are written in pure Java.
+* **Connectivity (JDBC):** A professional bridge to SQL Server using `DriverManager` and `PreparedStatement` to facilitate secure CRUD operations.
+* **Storage (T-SQL):** Structured Query Language used for schema creation, persistent storage, and complex data retrieval.
 
 ---
 
 ### 📂 Repository Structure
 ```text
 ├── src/college/            # 100% Java Source Code (GUI & Logic)
-├── database/               # SQL Scripts & Relational Schema
+├── database/               # T-SQL Scripts & Relational Schema
 ├── documentation/          
-│   ├── UML/                # Use Cases & Activity Diagrams
-│   └── ERD/                # Entity Relationship Diagrams & Relational Schema
-└── README.md               # Project Documentation
+│   ├── UML/                # Use Cases & Activity Flowcharts
+│   ├── ERD/                # Entity Relationship Diagrams
+│   └── Relational_Mapping/ # Normalized Database Models
+└── README.md               # Full Documentation
