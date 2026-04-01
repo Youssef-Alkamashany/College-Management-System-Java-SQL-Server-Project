@@ -13,7 +13,7 @@
 ---
 
 ### 🌟 Project Overview
-The **College Management System** is a professional desktop solution designed to automate administrative tasks in educational institutions. It features a robust multi-frame GUI built with Java AWT and a relational database backend hosted on Microsoft SQL Server. The system handles everything from student enrollments to course assignments and department management.
+The **College Management System** is a professional desktop solution designed to automate administrative tasks in educational institutions. It features a robust multi-frame GUI built with Java AWT and a relational database backend hosted on Microsoft SQL Server. The system handles everything from student enrollments to course assignments and department management. 
 
 ---
 
