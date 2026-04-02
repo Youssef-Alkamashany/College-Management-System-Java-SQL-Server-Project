@@ -43,7 +43,15 @@ The backend is a robust **SQL Server** relational model designed with strict adh
 * **Storage (T-SQL):** Structured Query Language used for schema creation, persistent storage, and complex data retrieval.
 
 ---
+### 👤 Author
+**Youssef Alkamashany**
+* 🚀 **Aspiring MLOps & AI Data Engineer**.
+* 💼 **Team Leader** | Digital Egypt Pioneers Initiative (DEPI).
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/youssef-alkamashany-18261132b)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Youssef-Alkamashany)
+
+---------------
 ### 📂 Repository Structure
 ```text
 ├── src/college/            # 100% Java Source Code (GUI & Logic)
